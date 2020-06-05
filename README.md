@@ -11,10 +11,12 @@
 
 ### steps to perform
 
+Clone this repo
 ```
 git clone git@github.com:genericmueller/aws-ant-media.git
 ```
 
+Prepare your credentials file
 ```
 mv .aws_credentials.sample .aws_credentials
 ```
@@ -28,20 +30,22 @@ export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
 export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 ```
 
+Initialize the terraform environment
 ```
 terraform init
 ```
 
+Prepare the dynamic DNS script
 ```
 mv dedyn.sh.sample dedyn.sh
 ```
 
 Fill in your own deSec credentials and your DynDNS name (for example: foo.dedyn.io) and save the file.
-
 ```
 mv terraform.tfvars.sample terraform.tfvars
 ```
-   
+
+Fire up the terraform script.
 ```
 terraform plan -out antmediaserver
 terraform apply antmediaserver
