@@ -11,28 +11,28 @@
 
 ### steps to perform
 
-git clone git@github.com:genericmueller/aws-ant-media.git
+    git clone git@github.com:genericmueller/aws-ant-media.git
 
-mv .aws_credentials.sample .aws_credentials
+    mv .aws_credentials.sample .aws_credentials
 
 Fill in your own AWS credentials (see AWS console / IAM) and save the file.
 
 export your AWS_ACCESS_KEY_ID and your AWS_SECRET_ACCESS_KEY on the cli (the same as in the .aws_credentials file)
 
-export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
-export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
+    export AWS_ACCESS_KEY_ID=YOUR_AWS_ACCESS_KEY_ID
+    export AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY
 
-terraform init
+    terraform init
 
-mv dedyn.sh.sample dedyn.sh
+    mv dedyn.sh.sample dedyn.sh
 
 Fill in your own deSec credentials and your DynDNS name (for example: foo.dedyn.io) and save the file.
 
-mv terraform.tfvars.sample terraform.tfvars
+    mv terraform.tfvars.sample terraform.tfvars
 
-terraform plan -out antmediaserver
+    terraform plan -out antmediaserver
 
-terraform apply antmediaserver
+    terraform apply antmediaserver
 
 When the process is finished you will get an output with your public IP and the instance_id of your server. You should than also be able to access your ant media server via your dyndns name.
 
@@ -45,4 +45,4 @@ Password: instance_id
 
 To completely remove the environment, use the following command and type "yes" at the prompt.
 
-terraform destroy
+    terraform destroy
