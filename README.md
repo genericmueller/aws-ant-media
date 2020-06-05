@@ -39,11 +39,7 @@ Prepare the dynamic DNS script
 ```
 mv dedyn.sh.sample dedyn.sh
 ```
-
 Fill in your own deSec credentials and your DynDNS name (for example: foo.dedyn.io) and save the file.
-```
-mv terraform.tfvars.sample terraform.tfvars
-```
 
 Fire up the terraform script.
 ```
