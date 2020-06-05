@@ -38,7 +38,7 @@ When the process is finished you will get an output with your public IP and the 
 
 for example: http://mediaserver.dedyn.io:5080
 
-Login password: JamesBond
+Login: JamesBond \\
 Password: instance_id
 
 ### tear down the environmet
