@@ -34,9 +34,15 @@ terraform plan -out antmediaserver
 
 terraform apply antmediaserver
 
-When the process is finished you will get an output with your public IP and the instance_id if your server. You should than also be able to access your ant media server via your dyndns name.
+When the process is finished you will get an output with your public IP and the instance_id of your server. You should than also be able to access your ant media server via your dyndns name.
 
 for example: http://mediaserver.dedyn.io:5080
 
 Login password: JamesBond
 Password: instance_id
+
+### tear down the environmet
+
+To completely remove the environment, use the following command and type "yes" at the prompt.
+
+terraform destroy
