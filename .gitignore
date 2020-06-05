@@ -8,6 +8,5 @@ override.tf.json
 .aws_credentials
 terraform.tfstate
 terraform.tfstate.backup
-terraform.tfvars
 dedyn.sh
 antmediaserver
