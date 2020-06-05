@@ -17,5 +17,5 @@ fi
 if $UPDATE ; then
     echo $IPNOW > $IPDATEI
 
-	curl  "https://update.dedyn.io/update?username=clwmedia.dedyn.io&password=YOURPASSWORD"
+	curl  "https://update.dedyn.io/update?username=yourdnsname.dedyn.io&password=YOURPASSWORD"
 fi
